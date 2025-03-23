@@ -1,32 +1,32 @@
 # Linear algebra 
 - is a branch of mathematics that deals with vectors, matrices, and linear transformations, focusing on systems of linear equations and their solutions.
 
-## linear vs non-linear algebra
+### linear vs non-linear algebra
 - Linear algebra is the backbone of ML because it's fast, scalable, and interpretable.
 - Non-linearity is introduced in a structured way (e.g., activation functions, kernels).
 - Purely non-linear algebra would be too slow, complex, and hard to optimize for large-scale ML models.
 
 
-## Vector:
+### Vector:
 - arrows pointing in space, direction and length
 - list of numbers (ml)
 - unit vectors (basis vector)
 - scalars scale the basis vector, we can chose basis vectors
 - The basis of a vector space is a set of linearly independent vectors that span the full space
-  - ![LI](image-4.png)
+  ![LI](image-4.png)
 
-# Modulus
+### Modulus
 
-# dot product
+### dot product
 - Measures influence in the same direction → Perpendicular means no influence (0)
 
-# cosine
+### cosine
 
-# Scalar projection
-![scalar projection](image.png)
+### Scalar projection
+![scalar projection](images/image.png)
 
-# Vector projection
-![vector projection formula](image-1.png)
+### Vector projection
+![vector projection formula](images/image-1.png)
 
 - While scalar projection gives us just a number (the magnitude), vector projection gives us an actual vector that shows how much one vector "pushes" in the direction of another.
 - The vector projection of A onto B is the part of A that actually points along B. It tells us:
@@ -34,10 +34,10 @@ How much of A is in the direction of B (like scalar projection).
 A new vector that represents this portion, instead of just a number.
 So instead of just knowing how much a vector contributes, we now also know in which direction this contribution happens.
 
---- ![Projections](image-2.png)
+--- ![Projections](images/image-2.png)
 
 - **Changing basis vectors & projection**
-  ![changing basis](image-3.png)
+  ![changing basis](images/image-3.png)
 - **Why Is It Easier with Orthogonal Vectors?**
     - No Interference Between Components
         - When two vectors are orthogonal, changing one coefficient does not affect the contribution of the other.
@@ -63,11 +63,13 @@ So instead of just knowing how much a vector contributes, we now also know in wh
     If we use different lights, the shadow changes → this is like choosing different basis vectors in ML.
 
 ## Matrices
- - transforming the basis vectors/space ![alt text](image-5.png)
+ - transforming the basis vectors/space 
+ ![alt text](images/image-5.png)
  **Linear Transformation:**
  > line remains a line after transformation
  > origin remains same after transformation
- - various transform matrices ![alt text](image-6.png)
+ - various transform matrices 
+ ![alt text](images/image-6.png)
  - Absolutely! Let’s build an intuitive understanding of matrices, basis vectors, and transformations. Think of matrices as "machines" that stretch, squash, rotate, or shear space. To grasp this, we need to visualize basis vectors and how they define the "rules" of the space.
     - matrices change the basis vectors and their magnitudes, and because vectors are expressed in terms of these basis vectors, the vectors themselves also change accordingly.
 
@@ -84,20 +86,25 @@ So instead of just knowing how much a vector contributes, we now also know in wh
     After transformation, the same recipe applies to the new basis vectors:
     Av = x(new e1) + y(new e2).
 
-# Matrix Inverse
+### Matrix Inverse
   Gaussian Elimination
   - elimination of rows
   - back substitution
-  ![alt text](image-7.png)
+  ![alt text](images/image-7.png)
   Inverse of Matrix 
-    - now tips to eliminate the rows to find the inverse ****
+    - *know tips to eliminate the rows to find the inverse*
   - **determinants and inverses**
-    - area of the vector space ![alt text](image-8.png)
-    - proof of determinates giving inverses ![alt text](image-9.png)
+    - area of the vector space 
+    ![alt text](images/image-8.png)
+    - proof of determinates giving inverses 
+    ![alt text](images/image-9.png)
     - if determinant is zero , that says the matrix is non-inverse and we can't solve the system of equations
     - we can't tranform the matrix aswell, as the determinate is zero and there is no inverse. If tranformed, we cannot bring it back as the dimensions are collapsed
     *** det is zero -> basis vectors are not linearly independent -> that mean inverse doesn't exist
 
-# Einstein Summation Convention
-  matrix multiplication - ![alt text](image-10.png)
-  dot product symmetry  - ![alt text](image-11.png)
+### Einstein Summation Convention
+  **matrix multiplication**
+  ![alt text](images/image-10.png)
+
+  **dot product symmetry**
+  ![alt text](images/image-11.png)
