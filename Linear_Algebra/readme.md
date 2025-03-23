@@ -8,11 +8,11 @@
 
 
 ## Vector:
-> arrows pointing in space, direction and length
-> list of numbers (ml)
-> unit vectors (basis vector)
-> scalars scale the basis vector, we can chose basis vectors
-> The basis of a vector space is a set of linearly independent vectors that span the full space
+- arrows pointing in space, direction and length
+- list of numbers (ml)
+- unit vectors (basis vector)
+- scalars scale the basis vector, we can chose basis vectors
+- The basis of a vector space is a set of linearly independent vectors that span the full space
   - ![LI](image-4.png)
 
 # Modulus
@@ -91,7 +91,7 @@ So instead of just knowing how much a vector contributes, we now also know in wh
   ![alt text](image-7.png)
   Inverse of Matrix 
     - now tips to eliminate the rows to find the inverse ****
-  - determinants and inverses
+  - **determinants and inverses**
     - area of the vector space ![alt text](image-8.png)
     - proof of determinates giving inverses ![alt text](image-9.png)
     - if determinant is zero , that says the matrix is non-inverse and we can't solve the system of equations
